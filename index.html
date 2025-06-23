@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Business Landing page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Business landing</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="text-white text-center d-flex align-items-center" style="background-image: url('img/hero-img.jpg'); height: 100vh; background-size: cover;">
+    <div class="container">
+      <h1 class="display-4">Welcome to Our Business</h1>
+      <h3 class="lead">Providing solutions that matter.</h3>
+      <a href="#contact" class="btn btn-primary btn-lg mt-3">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 data-aos="zoom-in" data-aos-delay="200">About Us</h2>
+          <p>We are committed to excellence in our services and customer satisfaction.</p>
+          <a href="#services" class="btn btn-outline-primary">Our Services</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <i class="bi bi-building display-1 text-primary"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="zoom-in" data-aos-delay="200">Our Services</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4" data-aos="fade-up">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-gear-fill display-4 text-primary"></i>
+              <h5 class="card-title mt-3">Consulting</h5>
+              <p class="card-text">Expert advice to grow your business efficiently.</p>
+              <a href="#" class="btn btn-outline-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <!-- More cards for services as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="zoom-in" data-aos-delay="200">What Our Clients Say</h2>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active text-center">
+                <blockquote class="blockquote">
+                <p>"Fantastic service and great results!"</p>
+                <footer class="blockquote-footer">Jane Doe, CEO at ExampleCorp</footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item text-center">
+                <blockquote class="blockquote">
+                    <p>"Their team exceeded our expectations. Highly recommended!"</p>
+                    <footer class="blockquote-footer">John Smith, Marketing Director at BrightIdeas</footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item text-center">
+                <blockquote class="blockquote">
+                    <p>"Professional, responsive, and truly caring about client success."</p>
+                    <footer class="blockquote-footer">Sarah Johnson, Founder of InnovateNow</footer>
+                </blockquote>
+            </div>
+            <div class="carousel-item text-center">
+                <blockquote class="blockquote">
+                    <p>"An outstanding experience from start to finish. Will definitely return."</p>
+                    <footer class="blockquote-footer">Michael Lee, Operations Manager at TechFlow</footer>
+                </blockquote>
+            </div>
+          <!-- Add more testimonials (carousel-item blocks) here -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5" data-aos="zoom-in" data-aos-delay="200">Contact Us</h2>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input type="text" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+      <div class="mt-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d120333.01460735325!2d-99.20418583897944!3d19.39071964984532!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff3c7d6f6a93%3A0xc7c4db5d4c1d1b99!2sMexico%20City%2C%20CDMX%2C%20Mexico!5e0!3m2!1sen!2sus!4v1719084221234!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex justify-content-between align-items-center flex-column flex-md-row text-center">
+      <p class="mb-0">&copy; 2025 Business Landing. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

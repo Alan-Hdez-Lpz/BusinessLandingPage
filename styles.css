@@ -1,0 +1,22 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #004080;
+  color: white;
+}
+
+footer i {
+  font-size: 1.5rem;
+}
+
+footer a:hover {
+  color: #0d6efd;
+}
